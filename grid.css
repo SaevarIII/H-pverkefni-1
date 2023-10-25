@@ -1,0 +1,24 @@
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.warehouse-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.selection-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .product-grid, .warehouse-section, .selection-section {
+        grid-template-columns: 1fr;
+    }
+}
